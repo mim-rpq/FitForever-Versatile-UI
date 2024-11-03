@@ -263,7 +263,8 @@ nav > ul {
         flex-direction: column;
     }
 
-    header{
+    header,
+    .habits-des{
         padding: 10px;
         padding-left: 20px;
     }
@@ -290,6 +291,20 @@ nav > ul {
     .workout-video{
         top:-475px;
         right:10px;
+    }
+
+    .habit-des{
+        margin: 6px 40px;
+    }
+
+    .habits{
+        grid-template-columns:repeat(1, 1fr);
+        margin: 30px;
+
+    }
+
+    .habit-container{
+        margin: 0 10px;
     }
 
 }
