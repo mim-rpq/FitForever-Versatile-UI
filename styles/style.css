@@ -217,3 +217,40 @@ nav > ul {
     font-size:0.75rem;
     margin:0px 20px 14px 21px ;
 }
+
+
+/* responsive ------------------- */
+
+@media screen and ( max-width:576px ) {
+    .banner-container{
+        flex-direction: column;
+    }
+
+    header{
+        padding: 10px;
+        padding-left: 20px;
+    }
+    .banner-heading{
+        font-size:3rem;
+        margin-top: 40px;
+    }
+
+    .banner-container{
+        gap: 30px;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .tutorial-video{
+        left:15px;
+        top:-300px;
+    }
+
+    .workout-video{
+        top:-475px;
+        right:10px;
+    }
+
+}
