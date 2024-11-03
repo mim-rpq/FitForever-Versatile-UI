@@ -256,15 +256,53 @@ nav > ul {
     margin-top: 51px;
 }
 
+/* run style ------------ */
+
+.run-des,
+.run-title{
+    margin: 0;
+}
+
+.run-des{
+    padding: 12px 0px 29px 0px;
+}
+
+.run-img img{
+    width:322px;
+    height:274px;
+    border-radius: 16px;
+}
+
+.run-container{
+    gap: 145px;
+    background:rgb(34, 34, 34);
+    border-radius: 16px;
+}
+
+.run-content{
+    padding:36px 0px 36px 36px;
+}
+
+.run-img{
+    padding:35px;
+    padding-left: 0;
+}
+
+.run-btn{
+   padding: 14px 45px;
+}
 /* responsive media quary ------------------- */
 
 @media screen and ( max-width:576px ) {
-    .banner-container{
+    .banner-container,
+    .run-container{
         flex-direction: column;
     }
 
     header,
-    .habits-des{
+    .habits-des,
+    .run-content,
+    .run-img{
         padding: 10px;
         padding-left: 20px;
     }
@@ -275,7 +313,8 @@ nav > ul {
     .banner-des{
         padding-right: 10px;
     }
-    .banner-container{
+    .banner-container,
+    .run-container{
         gap: 30px;
     }
 
@@ -306,6 +345,17 @@ nav > ul {
     .habit-container{
         margin: 0 10px;
     }
+
+    .run-container{
+        margin: 20px;
+        padding:10px;
+    }
+
+    .run-img img{
+        width: 100%;
+    }
+
+
 
 }
 
