@@ -44,7 +44,7 @@ body{
  }
 
  .container{
-    max-width: 915px;
+    max-width: 990px;
     margin: 0 auto;
     margin-top: 88px;
  }
@@ -218,8 +218,45 @@ nav > ul {
     margin:0px 20px 14px 21px ;
 }
 
+/* habits section related style ------------- */
+.habit-heading,
+.habits-des,
+.habit-title,
+.habit-des{
+    margin: 0;
+    text-align: center;
+}
+.habits-des{
+    padding:14px 160px 58px 160px;
+    font-size:.87rem;
+}
 
-/* responsive ------------------- */
+.habit img{
+    border-radius: 50%;
+    border: 3px solid rgba(94, 91, 91, 0.5) ;
+    padding: 1px;
+}
+.habit{
+    flex-direction: column;
+   
+}
+.habit-title{
+    margin-top:26px;
+    font-size: 1.12rem;
+    font-weight: 600;
+}
+.habit-des {
+    line-height: 18px;
+    margin-top: 6px;
+}
+.habits{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:40px;
+    margin-top: 51px;
+}
+
+/* responsive media quary ------------------- */
 
 @media screen and ( max-width:576px ) {
     .banner-container{
@@ -234,7 +271,9 @@ nav > ul {
         font-size:3rem;
         margin-top: 40px;
     }
-
+    .banner-des{
+        padding-right: 10px;
+    }
     .banner-container{
         gap: 30px;
     }
@@ -254,3 +293,5 @@ nav > ul {
     }
 
 }
+
+
