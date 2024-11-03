@@ -7,7 +7,7 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: "Inter", sans-serif;
-    
+    background: #000000;
 
 }
 
@@ -23,6 +23,35 @@ body{
 .primary-color{
     color: rgb(255, 255, 255);
 }
+
+.description-color{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.description{
+    font-size:0.87rem;
+    font-weight: 400;
+    line-height: 24px;
+ }
+
+ .section-title{
+    font-size:2.62rem;
+    font-weight: 900;
+
+ }
+ .section-description{
+    font-size:1rem;
+ }
+
+ .container{
+    max-width: 915px;
+    margin: 0 auto;
+    margin-top: 88px;
+ }
+
+/*/////////////////////////////////////
+             header style
+  ///////////////////////////////////// */
 
 /* nav related style ----- */
 
@@ -75,4 +104,116 @@ nav > ul {
     padding: 7px 17px;
     font-size: 15px;
     font-weight: 600;
+}
+
+/* banner style---------------------------------- */
+.banner-container{
+    gap:142px;
+}
+
+.banner-des{
+    padding-right: 150px;
+}
+
+.banner-heading{
+    font-size: 4.25rem;
+    font-weight: 900;
+    margin:84px 0px 24px;
+   
+}
+
+@font-face{
+    font-family: myFont;
+    src: url("../Miama.ttf");
+}
+
+.shape{
+    font-family: myFont;
+    font-weight:400;
+    font-size:8.25rem;
+    line-height: 0;
+    
+    
+}
+
+.primary-btn{
+    border:0;
+    background: rgb(230, 83, 60);
+    border-radius: 36px;
+    padding: 14px 35px;
+}
+
+#banner-btn{
+    border: 1px solid rgb(255, 255, 255);
+    background: rgba(16, 16, 16, 0.54);
+    
+}
+.btn-cont{
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.banner-dp img{
+    width: 307px;
+    height: 510px;
+}
+.banner-img-container{
+    position: relative;
+}
+
+.tutorial-video{
+    gap: 12px;
+    position: relative;
+    left:-100px;
+    top:-153px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background: rgba(48, 48, 48, 0.54);
+    width:181px;
+    height: 94px;
+
+}
+.video-text h2{
+    color: rgb(250, 250, 249);
+    font-size:1.31rem;
+    font-weight: 900;
+    margin-top:17px ;
+    margin-bottom: 0;
+    line-height: 24px;
+}
+.video-des{
+    margin-top: 7px;
+    margin-bottom:17px;
+}
+.circle{
+    width: 35px;
+    height: 35px;
+    background: rgb(230, 83, 60);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.fa-play{
+    font-size: .75rem;
+}
+
+.workout-video{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    position: relative;
+    top:-405px;
+    right:-15px;
+    width:175px;
+}
+
+.workout-video h2{
+    font-size:2.18rem;
+    font-weight: 900;
+    line-height: 40px;
+    margin: 14px 46px 4px 21px;
+}
+.workout-video p{
+    font-size:0.75rem;
+    margin:0px 20px 14px 21px ;
 }
