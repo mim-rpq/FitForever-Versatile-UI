@@ -49,24 +49,11 @@ body{
     margin-top: 88px;
  }
 
- .habit-heading,
-.habits-des,
-.habit-title,
-.habit-des,
-.trainer-title,
-.trainer-des,
-.team-title,
-.team-des{
-    margin: 0;
-    
+.margin-0{
+    margin:0;
 }
 
-.habit-heading,
-.habits-des,
-.habit-title,
-.habit-des,
-.team-title,
-.team-des{
+.center{
     text-align: center;
 }
 
@@ -364,7 +351,9 @@ nav > ul {
     header,
     .habits-des,
     .run-content,
-    .run-img{
+    .run-img,
+    .team-des,
+    .team-title{
         padding: 10px;
         padding-left: 20px;
     }
@@ -398,7 +387,8 @@ nav > ul {
         margin: 6px 40px;
     }
 
-    .habits{
+    .habits,
+    .team-container{
         grid-template-columns:repeat(1, 1fr);
         margin: 30px;
 
