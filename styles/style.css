@@ -49,6 +49,27 @@ body{
     margin-top: 88px;
  }
 
+ .habit-heading,
+.habits-des,
+.habit-title,
+.habit-des,
+.trainer-title,
+.trainer-des,
+.team-title,
+.team-des{
+    margin: 0;
+    
+}
+
+.habit-heading,
+.habits-des,
+.habit-title,
+.habit-des,
+.team-title,
+.team-des{
+    text-align: center;
+}
+
 /*/////////////////////////////////////
              header style
   ///////////////////////////////////// */
@@ -219,13 +240,7 @@ nav > ul {
 }
 
 /* habits section related style ------------- */
-.habit-heading,
-.habits-des,
-.habit-title,
-.habit-des{
-    margin: 0;
-    text-align: center;
-}
+
 .habits-des{
     padding:14px 160px 58px 160px;
     font-size:.87rem;
@@ -284,12 +299,59 @@ nav > ul {
 }
 
 .run-img{
-    padding:35px;
+    padding:45px 35px 35px 35px;
     padding-left: 0;
 }
 
 .run-btn{
    padding: 14px 45px;
+}
+
+/* team section style ------------- */
+
+
+.team-des{
+    padding: 12px 0px 51px 0px;
+}
+.team-container{
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    padding:17px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:17px;
+}
+.team-member{
+    background-image: url('../images/trainer1.png');
+    height:239px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: self-end;
+    border-radius:16px;
+}
+#trainer-2{
+    background-image: url('../images/trainer2.png');
+}
+#trainer-3{
+    background-image: url('../images/trainer3.png');
+}
+#trainer-4{
+    background-image: url('../images/trainer4.png');
+}
+#trainer-5{
+    background-image: url('../images/trainer5.png');
+}
+#trainer-6{
+    background-image: url('../images/trainer6.png');
+}
+
+.trainer-des{
+    padding: 6px 0px 10px 0px;
+}
+.trainer-detail{
+    padding-left: 15px;
 }
 /* responsive media quary ------------------- */
 
