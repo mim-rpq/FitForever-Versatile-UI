@@ -42,7 +42,12 @@ body{
  .section-description{
     font-size:1rem;
  }
-
+ .primary-btn{
+    border:0;
+    background: rgb(230, 83, 60);
+    border-radius: 36px;
+    padding: 14px 35px;
+}
  .container{
     max-width: 990px;
     margin: 0 auto;
@@ -63,7 +68,7 @@ body{
 
 /* nav related style ----- */
 
-.nav-text{
+.fitness{
     color: rgb(230, 83, 60);
     font-size: 1.93rem;
     font-weight: 800;
@@ -142,13 +147,6 @@ nav > ul {
     line-height: 0;
     
     
-}
-
-.primary-btn{
-    border:0;
-    background: rgb(230, 83, 60);
-    border-radius: 36px;
-    padding: 14px 35px;
 }
 
 #banner-btn{
@@ -293,7 +291,69 @@ nav > ul {
 .run-btn{
    padding: 14px 45px;
 }
+/* BMI style ====================== */
+.bmi-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#bg{
+    background: rgb(34, 34, 34);
+}
+.bmi-head{
+    padding-left:337px;
+    padding-top:55px;
+}
+.table-title {
+    margin: 43px 0px 12px 0px;
+    font-size: 1.5rem;
+}
+table{
+    border-collapse:collapse;
+}
+td, th{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 7px 32px 7px 22px;
+}
+th{
+    text-align: left;
+}
+.info{
+    padding:30px 0px;
+}
 
+.info input[type="number"], select{
+    padding: 10px 40px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 0;
+    
+}
+::placeholder,#gender,#area{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.info input[type="number"]{
+    width: 50%;
+   
+}
+#gender{
+    width: 67%;
+}
+.info #area{
+    width: 100%;
+}
+.inp{
+    gap: 10px;
+}
+
+.bmi-btn{
+    /* margin-top: 40px; */
+    margin-bottom: 45px;
+}
 /* team section style ------------- */
 
 
@@ -340,6 +400,46 @@ nav > ul {
 .trainer-detail{
     padding-left: 15px;
 }
+
+/* footer style ===================== */
+.footer-container{
+    display: grid;
+    grid-template-columns: 2fr repeat(2,1fr);
+    gap:110px;
+    padding: 50px 0px 69px 0px;
+}
+
+#footer-fitness{
+    font-size: 3.81rem;
+    margin-bottom: 17px;
+}
+.f-title{
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 34px;
+    margin-top: 20px;
+}
+
+.column a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    
+}
+.column p{
+    margin-bottom: 17px;
+}
+hr{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer{
+    background: rgba(255, 255, 255, 0.1);
+   
+}
+.f-des{
+    font-size:1rem;
+    padding:31px;
+}
 /* responsive media quary ------------------- */
 
 @media screen and ( max-width:576px ) {
@@ -353,7 +453,8 @@ nav > ul {
     .run-content,
     .run-img,
     .team-des,
-    .team-title{
+    .team-title,
+    .bmi-head{
         padding: 10px;
         padding-left: 20px;
     }
@@ -388,7 +489,8 @@ nav > ul {
     }
 
     .habits,
-    .team-container{
+    .team-container,
+    .bmi-container{
         grid-template-columns:repeat(1, 1fr);
         margin: 30px;
 
