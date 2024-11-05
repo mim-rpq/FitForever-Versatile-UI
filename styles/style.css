@@ -47,6 +47,7 @@ body{
     background: rgb(230, 83, 60);
     border-radius: 36px;
     padding: 14px 35px;
+    cursor: pointer;
 }
  .container{
     max-width: 990px;
@@ -117,6 +118,13 @@ nav > ul {
     padding: 7px 17px;
     font-size: 15px;
     font-weight: 600;
+}
+
+.menu-icon i{
+    font-size: 1.5rem;
+}
+.menu-icon{
+    display: none;
 }
 
 /* banner style---------------------------------- */
@@ -291,6 +299,81 @@ nav > ul {
 .run-btn{
    padding: 14px 45px;
 }
+/* exercise section style ------------- */
+.exercise-container{
+    display:grid;
+    width: 100%;
+    grid-template-areas: 
+    "exercise-1  exercise-2  exercise-2   exercise-3"
+    "exercise-4  exercise-4  exercise-5   exercise-6"
+    ;
+}
+.exercise{
+    background-image: url('../images/exercise1.jpg');
+    height:210px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: self-end;
+    
+}
+
+.exercise-1{
+    grid-area: exercise-1;
+}
+.exercise-2{
+    grid-area: exercise-2;
+}
+.exercise-3{
+    grid-area: exercise-3;
+}
+.exercise-4{
+    grid-area: exercise-4;
+}
+.exercise-5{
+    grid-area: exercise-5;
+}
+.exercise-6{
+    grid-area: exercise-6;
+}
+.overly{
+    background-color:rgba(6, 255, 210, 0.5);
+    height: 100%;
+    width: 100%;
+}
+.overly-2{
+    background-color: rgba(255, 0, 0, 0.3);
+}
+.overly-3{
+    background-color: rgb(204, 204, 204, 0.5);
+}
+.overly-4{
+    background-color: rgb(255, 255, 255,0.4);
+}
+.overly-5{
+    background-color: rgba(66, 255, 0, 0.3);
+}
+.overly-6{
+    background-color: rgba(0, 71, 255, 0.3);
+}
+#exer-2{
+    background-image: url('../images/exercise2.png');
+    
+}
+#exer-3{
+    background-image: url('../images/exercise3.png');
+}
+#exer-4{
+    background-image: url('../images/exercise4.png');
+}
+#exer-5{
+    background-image: url('../images/exercise5.jpg');
+}
+#exer-6{
+    background-image: url('../images/exercise6.jpg');
+}
 /* BMI style ====================== */
 .bmi-container{
     display: grid;
@@ -417,10 +500,12 @@ th{
     border: 0;
     border-radius: 32px;
     margin: 20px 0px;
+    cursor: pointer;
 }
 #middle-btn{
     border: 1px solid rgb(255, 255, 255);
     background: rgba(16, 16, 16, 0.54);
+    cursor: pointer;
 }
 /* team section style ------------- */
 
@@ -453,7 +538,7 @@ th{
     background-image: url('../images/trainer3.png');
 }
 #trainer-4{
-    background-image: url('../images/trainer4.png');
+    background-image: url("../images/trainer4.png");
 }
 #trainer-5{
     background-image: url('../images/trainer5.png');
@@ -511,6 +596,9 @@ footer{
 /* responsive media quary ------------------- */
 
 @media screen and ( max-width:576px ) {
+    .menu-icon{
+        display: block;
+    }
     .banner-container,
     .run-container{
         flex-direction: column;
@@ -536,7 +624,8 @@ footer{
     }
     .banner-container,
     .run-container,
-    .bmi-container{
+    .bmi-container,
+    .footer-container{
         gap: 30px;
     }
 
@@ -561,7 +650,8 @@ footer{
     .habits,
     .team-container,
     .bmi-container,
-    .membership{
+    .membership,
+    .footer-container{
         grid-template-columns:repeat(1, 1fr);
         margin: 30px;
 
@@ -578,6 +668,18 @@ footer{
 
     .run-img img{
         width: 100%;
+    }
+
+    .exercise-container{
+        grid-template-areas: 
+        "exercise-1"
+        "exercise-2"
+        "exercise-3"
+        "exercise-4"
+        "exercise-5"
+        "exercise-6"
+        ;
+        padding:10px;
     }
 
 
