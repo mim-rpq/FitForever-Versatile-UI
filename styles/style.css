@@ -351,8 +351,76 @@ th{
 }
 
 .bmi-btn{
-    /* margin-top: 40px; */
     margin-bottom: 45px;
+}
+/* membership style --------------------- */
+#membership-btn {
+    border: 1px solid rgb(255, 255, 255);
+    background: rgba(16, 16, 16, 0.54);
+}
+.member-btn{
+    margin: 88px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.membership{
+    background: rgb(34, 34, 34);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    padding:30px;
+    grid-row: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+}
+#middle-des{
+    color: rgb(255, 255, 255);
+}
+.member-des {
+    padding:14px;
+    
+}
+.card-des{
+    padding:14px;
+}
+
+.dollar{
+    color:rgb(230, 83, 60);
+    font-size: 2rem;
+}
+.year{
+    font-size: 2.5rem;
+}
+.red{
+    color:rgb(230, 83, 60);
+}
+.member-title{
+    font-size:1.75rem;
+    margin: 10px 0px 20px 0px;
+}
+.dollar-month{
+    margin-bottom:10px;
+}
+.card-bg{
+    background: rgba(174, 172, 172, 0.1);
+    border-radius: 12px;
+}
+.fa-regular{
+    margin-right: 15px;
+}
+
+.card-btn{
+    padding: 12px 20px;
+    background:rgb(230, 83, 60);
+    border: 0;
+    border-radius: 32px;
+    margin: 20px 0px;
+}
+#middle-btn{
+    border: 1px solid rgb(255, 255, 255);
+    background: rgba(16, 16, 16, 0.54);
 }
 /* team section style ------------- */
 
@@ -466,7 +534,8 @@ footer{
         padding-right: 10px;
     }
     .banner-container,
-    .run-container{
+    .run-container,
+    .bmi-container{
         gap: 30px;
     }
 
