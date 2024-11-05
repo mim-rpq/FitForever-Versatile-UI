@@ -522,7 +522,8 @@ footer{
     .run-img,
     .team-des,
     .team-title,
-    .bmi-head{
+    .bmi-head,
+    .card-heading{
         padding: 10px;
         padding-left: 20px;
     }
@@ -559,7 +560,8 @@ footer{
 
     .habits,
     .team-container,
-    .bmi-container{
+    .bmi-container,
+    .membership{
         grid-template-columns:repeat(1, 1fr);
         margin: 30px;
 
